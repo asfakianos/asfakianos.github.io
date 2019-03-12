@@ -1,0 +1,222 @@
+html, body {
+	font-family: "EB Garamond",serif;
+	background-color: none;
+	scroll-behavior: smooth;
+	display: block;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;	
+}
+
+#top {
+	padding: 10px 10px 5px 10px;
+	height: 100vh;
+	background-image: url("../images/splashbg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+   background-size: cover;
+	background-attachment: fixed;
+	filter: grayscale(40%);
+	top: 0;
+	left: 0;
+}
+
+#top-text {
+	position: relative;
+	top: 40vh;
+	left: 0;
+	text-align: center;
+	color: #D1E8E2;
+	text-shadow: 1px 1px #000000;
+	font-size: 50px;
+}
+
+.top-bar {
+	color: #D1E8E2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-shadow: 1px 1px #000000;
+}
+
+@keyframes slideInRight {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translatex(0%);
+	}
+}
+
+.top-bar svg {
+	padding: 0px 5px 0px 5px;
+}
+
+.top-bar .bar-element {
+	padding: 10px 15px 10px 15px;
+	font-size: 20px;
+	font-weight: 700;
+	font-variant: small-caps;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	animation: 1.5s ease-out 0s 1 slideInRight;
+}
+
+#social-media {
+	animation: 1.5s ease-out 0s 1 slideInLeft;
+}
+
+#name {
+	width: 70%;
+}
+
+#redir {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	text-justify: center;
+	justify-content: space-evenly;
+	animation: 1.5s ease-out 0s 1 slideInLeft;
+}
+
+.bar-element a {
+	display: inline-block;
+	color: #D1E8E2;
+	font-style: none;
+	text-decoration: none;
+}
+
+div a {
+  position: relative;
+  color: #D1E8E2;
+  text-decoration: none;
+}
+
+.top-bar a:before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: 0;
+   left: 0;
+	background-color: #D1E8E2;
+   visibility: hidden;
+   -webkit-transform: scaleX(0);
+   transform: scaleX(0);
+   -webkit-transition: all 0.3s ease-in-out 0s;
+   transition: all 0.3s ease-in-out 0s;
+}
+
+.top-bar a:hover:before {
+   visibility: visible;
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+}
+
+#Projects {
+	height: 100vh;
+	display: flex;
+	background-color: #78a897;
+	text-shadow: 1px 1px #2c3531;
+}
+
+#Projects .showcase {
+	float: left;
+	width: 100%;
+}
+
+#Projects h1 {
+	padding-top: 20px;
+	text-align: left;
+	margin-left: 2%;
+	color: #D1E8E2;
+}
+
+#Projects h3 {
+	text-align: left;
+	margin-left: 4%;
+	margin-top: -10px;
+	color: #D1E8E2;
+}
+
+#Projects a{
+	text-decoration: underline;
+}
+
+.float {
+	color: #FFF1F1;
+	font-size: 20px;
+	background-image: url("https://www.gettyimages.com/gi-resources/images/CreativeLandingPage/HP_Sept_24_2018/CR3_GettyImages-159018836.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	min-height: 25vh;
+	height: 50%;
+	max-height: 250px;
+	padding: 20px;
+	border-radius: 3%;
+	box-shadow: 3px 3px 3px #444444;
+	-webkit-transition: 1s;
+	transition: 1s;
+	object-fit: contain;
+/* 	animation: 5s ease-out 0s 1 glideUp; */
+}
+
+.float:hover {
+	opacity: 0.65;
+}
+
+.float .text-content {
+	display: inline-block;
+	color: #223144;
+	opacity: 0;
+	transition: 1s;
+	background-color: none;
+	height: 30%;
+	text-shadow: 1px 1px #000000;
+}
+
+.float:hover .text-content {
+	opacity: 1;
+	color: #223144;
+}
+
+.float-container {
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+
+@keyframes glideUp {
+	0% {
+		transform: translateY(200%);
+	}
+	
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.navbar {
+	position: absolute;
+	background-color: red;
+}
+
+#About {
+	height: 100vh;
+	overflow: hidden;
+	background-color: #9d9f89;
+}
