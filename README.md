@@ -1,2 +1,2 @@
-# [asfakianos.github.io](asfakianos.github.io)
+# [asfakianos.github.io](https://sfakianos.com)
 My personal website that I'm working on.
