@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>sfakianos.com</title>
 		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 
 	<div id="top">
@@ -11,10 +12,10 @@
 
 			<div class="bar-element" id="social-media">
 				<a href="https://www.linkedin.com/in/alexander-sfakianos-083908158/" target="_blank">
-					<img src="images/linkedin.png" height="30" width="30">
+					<img src="images/linkedin.png" height="30" width="40">
 				</a>
 				<a href="https://github.com/asfakianos" target="_blank">
-					<img src="images/github.png" height="30" width="30">
+					<img src="images/github.png" height="30" width="40">
 				</a>
 			</div>
 
@@ -28,6 +29,50 @@
 			Hi, I'm Alexander!
 		</div>
 	</div>
-
-	
+	<section id="Projects">
+		<div>
+			<h1 class="display-4" style="text-align: center; margin-bottom: 0%;">What I've Worked On</h1>
+		</div>
+		<section>
+			<div class="project">
+				<div class='headings'>
+					<h1 class="display-4">Lampi</h1>
+					<p class="langs">Python, C++, JavaScript, HTML, CSS, Swift</p>
+				</div>
+				<p>Lampi is a desklamp connected to a real time Web Service and iOS app (via MQTT and Bluetooth, respectively) paired with on-board touch screen controls for RGB LEDs connected to a RaspberryPi serving as a stepping stone into the IoT world. A video of Lampi working with the Django and nginx web service can be found <u><a href="https://www.youtube.com/watch?v=KET1ZIFGTjg&feature=youtu.be">here</a></u>, and a video of Lampi with a sound visualizer we made can be found <u><a href="https://www.youtube.com/watch?v=IAoLBr46mVQ&feature=youtu.be">here</a></u>.</p>
+			</div>
+			<img src="images/Lampi.png">
+		</section>
+		<section>
+			<div class="project">
+				<div class='headings'>
+					<h1 class="display-4">"Smart" RC</h1>
+					<p class="langs">Python</p>
+				</div>
+				<p>As a final project for a highschool course, I worked with a partner to modify an old RC car to navigate away from obstacles on a path. It was an old car, so we had to make modifications to the old wiring for powering the car and added ultrasonic sensors to detect obstacles within a few feet of the car.<br><u><a href="https://github.com/asfakianos/May2017Car" style="color: #25292B;">View On Github</a></u></p>
+			</div>
+			<img src="images/raspicar.png">
+		</section>
+		<section>
+			<div class="project">
+				<div class='headings'>
+					<h1 class="display-4">Ocubano</h1>
+					<p class="langs">C++</p>
+				</div>
+					<p>Ocubano was a final project for a Case Western Reserve University SAGES course (USNA288R Fall '18). Our goal was to work in a small group to create an IoT device (using a Particle Photon) and market it to the class as a product they could use. The Ocubano served as a notifier of whether a bathroom was vacant or not by using an ultrasonic sensor to monitor a bathroom doorway and publish to an LED matrix. <br><u><a href="https://github.com/asfakianos/DAQ-IOT_2018_Display">View On Github</a></u></p>
+				</div>
+				<img src="images/ocubano.png">
+		</section>
+		</section>
+	<section id="About">
+		<h1 class="display-3" style="margin-top: 2vh; text-align: center;">About</h1><hr style="width: 80vw;">
+		<div id="about-body">
+			<p>
+				I'm a CS student at Case Western Reserve University in Cleveland, Ohio working towards my BS with a focus in AI/ML. I enjoy working in Python, and I have recently struck interest in the IoT world. After playing soccer and football in highschool, I gave football a shot in college. I'm currently looking for internships in the Bay Area. An up to date copy of my resume is available on my <a href="https://www.linkedin.com/in/alexander-sfakianos-083908158/">linkedin profile.</a>
+			</p>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
