@@ -10,7 +10,7 @@ html, body {
 
 #top {
 	padding: 10px 10px 5px 10px;
-	height: 100vh;
+	height: 98vh;
 	background-image: url("../images/splashbg.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -19,6 +19,8 @@ html, body {
 	filter: grayscale(40%);
 	top: 0;
 	left: 0;
+	z-index: 0;
+
 }
 
 #top-text {
@@ -82,12 +84,13 @@ html, body {
 }
 
 #redir {
-	width: 20%;
+	width: 30%;
 	display: flex;
 	flex-direction: row;
 	text-justify: center;
 	justify-content: space-evenly;
 	animation: 1.5s ease-out 0s 1 slideInLeft;
+	white-space: nowrap;
 }
 
 .bar-element a {
@@ -103,7 +106,11 @@ div a {
   text-decoration: none;
 }
 
-#redir a:before {
+a:hover {
+	color: inherit;
+}
+
+/*#redir a:before {
    content: "";
    position: absolute;
    width: 100%;
@@ -122,93 +129,65 @@ div a {
    visibility: visible;
    -webkit-transform: scaleX(1);
    transform: scaleX(1);
-}
+}*/
 
 #Projects {
-	height: 100vh;
-	display: flex;
-	background-color: #78a897;
-	text-shadow: 1px 1px #2c3531;
-}
-
-#Projects .showcase {
-	float: left;
-	width: 100%;
-}
-
-#Projects h1 {
-	padding-top: 20px;
-	text-align: left;
-	margin-left: 2%;
-	color: #D1E8E2;
-}
-
-#Projects h3 {
-	text-align: left;
-	margin-left: 4%;
-	margin-top: -10px;
-	color: #D1E8E2;
-}
-
-#Projects a{
-	text-decoration: underline;
-}
-
-.float {
-	color: #FFF1F1;
-	font-size: 20px;
-	background-image: url("https://www.gettyimages.com/gi-resources/images/CreativeLandingPage/HP_Sept_24_2018/CR3_GettyImages-159018836.jpg");
-	background-size: cover;
+	padding-top: 5vh;
+	height: 98vh;
+	min-height: 1000px;
 	display: flex;
 	flex-direction: column;
-	width: 25%;
-	min-height: 25vh;
-	height: 50%;
-	max-height: 250px;
-	padding: 20px;
-	border-radius: 3%;
-	box-shadow: 3px 3px 3px #444444;
-	-webkit-transition: 1s;
-	transition: 1s;
-	object-fit: contain;
-/* 	animation: 5s ease-out 0s 1 glideUp; */
+	background-color: #DFDFDF;
+	z-index: 1;
+	/*box-shadow: 0px 10px 10px #FFFFFF, 0px -10px 10px #FFFFFF;*/
+	/*border-radius: 20px;*/
 }
 
-.float:hover {
-	opacity: 0.65;
+
+#Projects img{
+	position: absolute;
+	top: 5%;
+	bottom: 5%;
+	right: 1%;
+	height: 90%;
+	width: auto;
+	max-width: 40%;
 }
 
-.float .text-content {
-	display: inline-block;
-	color: #223144;
-	opacity: 0;
-	transition: 1s;
-	background-color: none;
-	height: 30%;
-	text-shadow: 1px 1px #000000;
+#Projects section {
+	position: relative;
+	color: #25292B;
+	background-color: #DFDFDF;
+	height: 33%;
 }
 
-.float:hover .text-content {
-	opacity: 1;
-	color: #223144;
+#Projects section:nth-child(even){
+	color: #DFDFDF;
+	background-color: #25292B;
 }
 
-.float-container {
-	flex-direction: row;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	padding: 20px;
+#Projects section:nth-child(odd) img {
+	left: 1%;
 }
 
-@keyframes glideUp {
-	0% {
-		transform: translateY(200%);
-	}
-	
-	100% {
-		transform: translateY(0%);
-	}
+#Projects section div {
+	margin-left: 2%;
+}
+
+#Projects section:nth-child(odd) .project {
+	/*text-align: right;*/
+	margin-left: 48%;
+	margin-right: 2%;
+}
+
+
+.project {
+	width: 50%;
+	text-overflow: ellipsis;
+}
+
+.langs {
+	font-size: 12px;
 }
 
 .navbar {
@@ -220,4 +199,8 @@ div a {
 	height: 100vh;
 	overflow: hidden;
 	background-color: #9d9f89;
+}
+
+#about-body {
+	margin: 0 6% 0 6%;
 }
