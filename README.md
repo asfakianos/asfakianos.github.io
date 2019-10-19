@@ -1,2 +1,3 @@
 # [asfakianos.github.io](https://www.sfakianos.com/)
-My personal website that I'm working on.
+
+Mobile + Some smaller screens won't be able to view content correctly, but I'm working on fixing that up currently.
